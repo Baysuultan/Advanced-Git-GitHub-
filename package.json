@@ -1,0 +1,9 @@
+{
+  "name": "advanced-git-lab",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests",
+    "lint": "node --check src/payment.js && node --check src/auth.js"
+  }
+}
