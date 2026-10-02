@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const { calculatePayment } = require('../src/payment');
 
 test('calculates payment including tax', () => {
-  assert.equal(calculatePayment(100, 0.12), 112);
+  assert.ok(Math.abs(calculatePayment(100, 0.12) - 112) < Number.EPSILON);
 });
 
 test('rejects invalid payment data', () => {
